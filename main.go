@@ -1,6 +1,6 @@
 package main
 import ("fmt";"strings")
-const appTag = "event-bus-f05e2b"
+const appTag = "event-bus-d12a45"
 type Transformer interface{Transform(string) string; Name() string}
 type Upper struct{}
 func (u Upper) Transform(s string) string{return strings.ToUpper(s)}

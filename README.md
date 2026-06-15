@@ -1,4 +1,4 @@
-# event-bus-f05e2b
+# event-bus-d12a45
 
 A Go event bus utility.
 

